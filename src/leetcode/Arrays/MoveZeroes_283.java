@@ -1,7 +1,12 @@
 package leetcode.Arrays;
 
+import java.util.Arrays;
+
 public class MoveZeroes_283 {
     public static void main(String[] args) {
+        int [] arr = {0,0,0,1,2,3,4};
+        moveZeroes(arr);
+        System.out.println(Arrays.toString(arr));
 
     }
     public static void moveZeroes(int[] nums) {

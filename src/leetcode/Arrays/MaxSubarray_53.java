@@ -2,6 +2,9 @@ package leetcode.Arrays;
 // Kadane's Algorithm Approach
 public class MaxSubarray_53 {
     public static void main(String[] args) {
+        int [] arr = {1,2,-7,4,3,4,5};
+
+        System.out.println(maxSubArray(arr));
 
     }
 

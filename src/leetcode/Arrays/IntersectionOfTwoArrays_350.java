@@ -1,11 +1,17 @@
 package leetcode.Arrays;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
 public class IntersectionOfTwoArrays_350 {
     public static void main(String[] args) {
+        int [] arr1 = {1,2,3,4,5,5};
+        int [] arr2 = {5,5,2,3,6};
+
+        System.out.println(Arrays.toString(intersect(arr1,arr2)));
+
 
     }
     public static int[] intersect(int[] nums1, int[] nums2) {

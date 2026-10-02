@@ -1,8 +1,16 @@
 package leetcode.Arrays;
+
+import java.util.Arrays;
+
 // Two Pointer Approach
 public class MergeSortedArray_88 {
     public static void main(String[] args) {
-
+    int [] arr1 = {1,2,3,4,0,0,0,0};
+    int m = arr1.length;
+    int [] arr2 = {5,6,7,8};
+    int n = arr2.length;
+    merge(arr1,4,arr2,4);
+    System.out.println(Arrays.toString(arr1));
     }
 
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
