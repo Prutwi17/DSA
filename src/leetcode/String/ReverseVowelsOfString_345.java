@@ -1,6 +1,6 @@
 package leetcode.String;
 
-public class ReverseVowelsofString_345 {
+public class ReverseVowelsOfString_345 {
     public static void main(String[] args) {
         String s = "IceCream";
         System.out.println(reverseVowels(s));
@@ -11,10 +11,10 @@ public class ReverseVowelsofString_345 {
         int right = s.length() - 1;
 
         while(left < right){
-            while(left < right && !isVowel(arr[left])){
+            while(left < right && isVowel(arr[left])){
                 left++;
             }
-            while(left < right && !isVowel(arr[right])){
+            while(left < right && isVowel(arr[right])){
                 right--;
             }
             char temp = arr[left];
@@ -28,6 +28,6 @@ public class ReverseVowelsofString_345 {
 
     }
     public static boolean isVowel(char ch){
-        return "aeiouAEIOU".indexOf(ch) != -1;
+        return "aeiouAEIOU".indexOf(ch) == -1;
     }
 }
